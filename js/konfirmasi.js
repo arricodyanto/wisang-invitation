@@ -36,4 +36,3 @@ document.getElementById("text-info").innerHTML = '<div class="no alert alert-war
 }
 });
 //]]>
-  
