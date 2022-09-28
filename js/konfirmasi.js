@@ -6,7 +6,6 @@ var input_blanter2 = document.getElementById('konfirmasi');
 /* Whatsapp Settings */
 var walink = 'https://web.whatsapp.com/send',
     phone = '6285156637671',
-    header1 = '*KONFIRMASI KEHADIRAN*',
     header = 'Halo om, saya ',
     footer = ' ingin mengkonfirmasi bahwa kami *',
     footer2 = '* dalam acara ulang tahun Wisang. Terimakasih',
@@ -20,7 +19,7 @@ var walink = 'whatsapp://send';
 
 if("" !=  input_blanter1.value && input_blanter2.value){
 
- /* Call Input Form */
+    /* Call Input Form */
 var input_nama = $("#nama").val(),
     input_konfirmasi = $("#konfirmasi :selected").text();
 
