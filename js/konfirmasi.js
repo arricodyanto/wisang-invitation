@@ -5,7 +5,7 @@ $(document).on('click','.send_form', function(){
 
     /* Whatsapp Settings */
     var walink = 'https://web.whatsapp.com/send',
-        phone = '6285156637671',
+        phone = '6281264737838',
         header1 = '*KONFIRMASI KEHADIRAN*',
         header = 'Halo om, saya ',
         footer = ' ingin mengkonfirmasi bahwa kami *',
@@ -22,7 +22,7 @@ $(document).on('click','.send_form', function(){
 
     /* Final Whatsapp URL */
     var blanter_whatsapp = walink + '?phone=' + phone + '&text=' + header1 + '%0A%0A' + header
-        + input_nama + footer + input_konfirmasi + footer2 + '%0A';
+        + input_nama + footer + input_konfirmasi + footer2;
 
     /* Whatsapp Window Open */
     window.open(blanter_whatsapp,'_blank');
