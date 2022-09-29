@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisanggeni - Birthday Invitation</title>
+    <link rel="icon" type="image/x-icon" href="img/logo/logo.png">
+    <!-- Css -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/base.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/venobox.css" rel="stylesheet" type="text/css"  media="all" />
+    <link href="css/fonts.css" rel="stylesheet" type="text/css"  media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Kristi|Lato:100,300,300i,400,700" rel="stylesheet">
+
+
+    <style>
+        body {
+            background-image: url('img/main-background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="inner-hero" style="padding: 20px; margin-left: 4rem; margin-right: 4rem;">
+        <div class="container-fluid">
+            <div class="row text-center" style="position: relative;">
+                <div class="col-sm-5"">
+                    <div class="block-event swap" style="background-color: white; margin-top: 40%;">
+                        <h2 class="typo" style="color:black; font-size:40px">Birthday Party</h2>
+                        <h3 class="heavy normal mt-20 mb-30" style="font-size: 18px;">Wisanggeni Mahesa Sakti</h3>
+                        <span class="align-start mb-30" style="color:black"><a style="font-size:50px;">2</a><sub>nd</sub></span></br>
+                        <h3 class="normal mt-30">Mengundang adik,</h3>
+                        <h2 class="heavy normal mt-15" style="font-size: 30px;" id="nama-undangan"></h2>
+                        <h3 class="normal mt-30">Untuk menghadiri acara pesta ulang tahun<br> dik <span class="heavy" style="font-size: 14px;">Wisang</span></h3>
+                        
+                        <div class="col-md-12  text-center mt-50">
+                            <a href="/index.html" class="but">
+                               <span>Buka Undangan</span>
+                               <svg class="but-svg" width="175" height="50" viewBox="0 0 415 120" xmlns="http://www.w3.org/2000/svg">
+                                  <rect class="but-rect" x="10" y="10" width="400" height="100" rx="6" ry="6"/>
+                               </svg>
+                            </a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function GetURLParameter(sParam)
+        {
+            var sPageURL = window.location.search.substring(1);
+            var sURLVariables = sPageURL.split('&');
+            for (var i = 0; i < sURLVariables.length; i++) 
+            {
+                var sParameterName = sURLVariables[i].split('=');
+                if (sParameterName[0] == sParam) 
+                {
+                    return sParameterName[1];
+                }
+            }
+        }
+        var nama = GetURLParameter('nama');
+        document.getElementById("nama-undangan").innerHTML = nama;
+        </script>
+</body>
+</html>
