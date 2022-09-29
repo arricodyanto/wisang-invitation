@@ -66,7 +66,8 @@
             }
         }
         var nama = GetURLParameter('nama');
-        document.getElementById("nama-undangan").innerHTML = nama;
+        let encoded = decodeURI(nama)
+        document.getElementById("nama-undangan").innerHTML = encoded;
         </script>
 </body>
 </html>
